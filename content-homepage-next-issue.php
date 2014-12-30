@@ -13,7 +13,7 @@
             <h4>Questo testo dobbiamo tenerlo???? cosa ci mettiamo???</h4>
 
             <p><?php the_excerpt(); ?></p>
-            <a href="<?php echo get_permalink( 101 ); ?>" class="btn-rivista pull-right"><?php _e( 'PUBBLICA UN ARTICOLO', 'online-magazine-theme' ); ?></a>
+            <a href="<?php echo get_permalink( PUBLISH_ARTICLE_PAGE ); ?>" class="btn-rivista pull-right"><?php _e( 'PUBBLICA UN ARTICOLO', 'online-magazine-theme' ); ?></a>
         </div>
     </div>
 </div>

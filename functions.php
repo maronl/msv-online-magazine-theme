@@ -3,6 +3,7 @@
 define( 'USER_PROFILE_PAGE', 10 );
 define( 'UPDATE_USER_PROFILE_PAGE', 130 );
 define( 'BUY_CREDITS_PAGE', 132 );
+define( 'PUBLISH_ARTICLE_PAGE', 101 );
 
 define( 'SEASON_PRICE', 200 );
 
