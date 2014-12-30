@@ -7,11 +7,15 @@ get_header(); ?>
     <?php include 'home.php'; ?>
 <?php else: ?>
 
-    <div class="breadcrumbs">
-        <?php if(function_exists('bcn_display'))
-        {
-            //bcn_display();
-        }?>
+    <div class="row-fluid">
+        <div class="col-sm-12" >
+            <div class="breadcrumbs">
+                <?php if(function_exists('bcn_display'))
+                {
+                    bcn_display();
+                }?>
+            </div>
+        </div>
     </div>
 
     <div class="row-fluid">

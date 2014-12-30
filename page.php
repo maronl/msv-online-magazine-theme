@@ -20,34 +20,34 @@ get_header(); ?>
     <?php include 'home.php'; ?>
 <?php else: ?>
 
-    <div class="container">
-
-        <div class="breadcrumbs">
-            <?php if(function_exists('bcn_display'))
-            {
-                bcn_display();
-            }?>
+    <div class="row-fluid">
+        <div class="col-sm-12" >
+            <div class="breadcrumbs">
+                <?php if(function_exists('bcn_display'))
+                {
+                    bcn_display();
+                }?>
+            </div>
         </div>
+    </div>
 
-        <div class="row-fluid">
+    <div class="row-fluid">
 
-            <div class="col-sm-8 blog-main">
+        <div class="col-sm-8 blog-main">
 
-                <div class="blog-post">
+            <div class="blog-post">
 
-                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-                        the_content();
-                    endwhile; else: ?>
-                        <p><?php _e( 'Spiacenti, nessun articolo corrisponde ai criteri selezionati.', 'online-magazine-theme'); ?></p>
-                    <?php endif; ?>
-
-                </div>
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+                    the_content();
+                endwhile; else: ?>
+                    <p><?php _e( 'Spiacenti, nessun articolo corrisponde ai criteri selezionati.', 'online-magazine-theme'); ?></p>
+                <?php endif; ?>
 
             </div>
 
-            <?php get_sidebar(); ?>
-
         </div>
+
+        <?php get_sidebar(); ?>
 
     </div>
 
