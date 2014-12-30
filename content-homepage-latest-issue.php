@@ -1,5 +1,4 @@
 <?php
-print_r( $post->ID );
 $url_bg = get_post_thumbnail_image_url( $post->ID, 'large', get_template_directory_uri() . "/img/placeholder-article-large.jpg" ); ?>
 <div class="issue-post" style="background-image: url('<?php echo $url_bg; ?>')">
     <h2><?php _e( 'Ultimo Numero', 'online-magazine-theme' ); ?><span class="pull-right">.<?php echo om_issue_number( get_the_title() ); ?></span></h2>

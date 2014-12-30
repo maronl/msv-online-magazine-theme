@@ -1,4 +1,4 @@
-<?php $url_bg = get_post_thumbnail_image_url( $post->ID, 'large', get_template_directory_uri() . "/img/placeholder-article-large .jpg" ); ?>
+<?php $url_bg = get_post_thumbnail_image_url( $post->ID, 'large', get_template_directory_uri() . "/img/placeholder-article-large.jpg" ); ?>
 <li>
     <div class="article-post" style="background-image: url('<?php echo $url_bg; ?>')">
         <h2><?php the_title(); ?></h2>
