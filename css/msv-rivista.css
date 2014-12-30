@@ -371,7 +371,7 @@ footer textarea {
 }
 
 /* liste */
-ul {
+ul.article-list, .index-content ul {
     padding: 0px;
     list-style-type: none;
 }
@@ -407,8 +407,13 @@ ul {
 }
 .issue h1{
     font-family: 'Oswald', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: #b52f4b;
+}
+.issue h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    color: #555;
 }
 .issue h3{
     font-family: 'Oswald', sans-serif;
@@ -707,4 +712,22 @@ a.vote {
     background-color: #FFF;
     padding: 15px;
     margin-bottom:15px;
+}
+
+/* images */
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.625em;
+}
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.625em;
+}
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

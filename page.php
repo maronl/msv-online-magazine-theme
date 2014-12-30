@@ -33,9 +33,9 @@ get_header(); ?>
 
     <div class="row-fluid">
 
-        <div class="col-sm-8 blog-main">
+        <div class="col-sm-8 issue">
 
-            <div class="blog-post">
+            <div class="issue-content">
 
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
                     the_content();
