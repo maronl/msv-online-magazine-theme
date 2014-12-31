@@ -149,14 +149,14 @@ function posts_join_filter_for_articles_buyed( $join ) {
 
     $join .=
         "
-        LEFT JOIN " . $wpdb->prefix . "credits_coins_purchases ON " . $wpdb->posts . ".ID =  " . $wpdb->prefix . "credits_coins_purchases.post_id
+        LEFT JOIN " . $wpdb->base_prefix . "credits_coins_purchases ON " . $wpdb->posts . ".ID =  " . $wpdb->base_prefix . "credits_coins_purchases.post_id
         ";
     return $join;
 }
 
 function posts_where_filter_for_articles_buyed( $where ) {
     global $wpdb;
-    $where .= " AND " . $wpdb->prefix . "credits_coins_purchases.id is not null ";
+    $where .= " AND " . $wpdb->base_prefix . "credits_coins_purchases.id is not null ";
     return $where;
 }
 

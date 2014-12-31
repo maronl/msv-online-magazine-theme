@@ -371,7 +371,7 @@ footer textarea {
 }
 
 /* liste */
-ul.article-list, .index-content ul {
+ul.issue-list, ul.article-list, .index-content ul {
     padding: 0px;
     list-style-type: none;
 }

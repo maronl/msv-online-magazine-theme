@@ -1,6 +1,6 @@
 <?php
-$url_bg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );
-$url_bg = $url_bg['0'];
+$url_bg = get_post_thumbnail_image_url( $post->ID, 'large', get_template_directory_uri() . "/img/placeholder-article-large.jpg" );
+
 $canAccessContent = ( is_user_logged_in() && cc_user_can_access_post( get_current_user_id(), get_the_ID()) ) ? true: false;
 if( $canAccessContent ){
     $file_name_base = 'msv_rivista' . $post->ID;

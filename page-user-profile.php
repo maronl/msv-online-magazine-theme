@@ -20,8 +20,17 @@ global $user_ID, $user_identity, $userdata;
 
 <?php get_header(); ?>
 
-
     <div class="row-fluid">
+
+        <?php if( isset( $_GET['credits_recharge'] ) && $_GET['credits_recharge'] == 'ok' ): ?>
+            <div class="col-sm-12">
+                <div class="alert-info" style="padding:15px; margin-bottom: 15px;">La ricarica dei tuoi crediti è stata effettuata con successo.</div>
+            </div>
+        <?php elseif( isset( $_GET['credits_recharge'] ) && $_GET['credits_recharge'] == 'ko' ): ?>
+            <div class="col-sm-12">
+                <div class="alert-info" style="padding:15px; margin-bottom: 15px;">La ricarica dei crediti è stata annullata.</div>
+            </div>
+        <?php endif; ?>
 
         <div class="col-sm-12 user-profile-info">
             <div class="row-fluid">

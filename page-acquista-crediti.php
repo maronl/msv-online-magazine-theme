@@ -33,7 +33,7 @@
                         $cost1000Credits = get_option('credits-coins-cost-1000');
                         ?>
 
-                        <form class="form-horizontal" id="buy10Credits" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                        <form class="form-horizontal" id="buy10Credits" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
                             <input type="hidden" name="cmd" value="_xclick">
                             <input type="hidden" name="business" value="segreteria_verbanensia_test@gmail.com">
                             <input type="hidden" name="item_name" id="item_name" value="Ricarica 10 Crediti - Utente admin">
@@ -41,14 +41,15 @@
                             <input type="hidden" name="shipping" id="shipping" value="0">
                             <input type="hidden" name="currency_code" value="EUR">
                             <input type="hidden" name="amount" id="amount" value="<?php echo $cost10Credits?>">
-                            <input type="hidden" name="return" id="return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>">
+                            <input type="hidden" name="return" id="return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>?credits_recharge=ok">
+                            <input type="hidden" name="cancel_return" id="cancel_return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>?credits_recharge=ko">
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
                                     <input type="submit"  class="btn btn-primary" alt="Make payments with PayPal - it's fast, free and secure!" value="10 Crediti"> (<?php echo $cost10Credits?> Euro)
                                 </div>
                             </div>
                         </form>
-                        <form class="form-horizontal" id="buy20Credits" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                        <form class="form-horizontal" id="buy20Credits" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
                             <input type="hidden" name="cmd" value="_xclick">
                             <input type="hidden" name="business" value="segreteria_verbanensia_test@gmail.com">
                             <input type="hidden" name="item_name" id="item_name" value="Ricarica 20 Crediti - Utente admin">
@@ -56,14 +57,15 @@
                             <input type="hidden" name="shipping" id="shipping" value="0">
                             <input type="hidden" name="currency_code" value="EUR">
                             <input type="hidden" name="amount" id="amount" value="<?php echo $cost20Credits?>">
-                            <input type="hidden" name="return" id="return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>">
+                            <input type="hidden" name="return" id="return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>?credits_recharge=ok">
+                            <input type="hidden" name="cancel_return" id="cancel_return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>?credits_recharge=ko">
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
                                     <input type="submit"  class="btn btn-primary" alt="Make payments with PayPal - it's fast, free and secure!" value="20 Crediti"> (<?php echo $cost20Credits?> Euro)
                                 </div>
                             </div>
                         </form>
-                        <form class="form-horizontal" id="buy50Credits" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                        <form class="form-horizontal" id="buy50Credits" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
                             <input type="hidden" name="cmd" value="_xclick">
                             <input type="hidden" name="business" value="segreteria_verbanensia_test@gmail.com">
                             <input type="hidden" name="item_name" id="item_name" value="Ricarica 50 Crediti - Utente admin">
@@ -71,14 +73,15 @@
                             <input type="hidden" name="shipping" id="shipping" value="0">
                             <input type="hidden" name="currency_code" value="EUR">
                             <input type="hidden" name="amount" id="amount" value="<?php echo $cost50Credits?>">
-                            <input type="hidden" name="return" id="return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>">
+                            <input type="hidden" name="return" id="return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>?credits_recharge=ok">
+                            <input type="hidden" name="cancel_return" id="cancel_return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>?credits_recharge=ko">
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
                                     <input type="submit"  class="btn btn-primary" alt="Make payments with PayPal - it's fast, free and secure!" value="50 Crediti"> (<?php echo $cost50Credits?> Euro)
                                 </div>
                             </div>
                         </form>
-                        <form class="form-horizontal" id="buy100Credits" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                        <form class="form-horizontal" id="buy100Credits" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
                             <input type="hidden" name="cmd" value="_xclick">
                             <input type="hidden" name="business" value="segreteria_verbanensia_test@gmail.com">
                             <input type="hidden" name="item_name" id="item_name" value="Ricarica 100 Crediti - Utente admin">
@@ -86,14 +89,15 @@
                             <input type="hidden" name="shipping" id="shipping" value="0">
                             <input type="hidden" name="currency_code" value="EUR">
                             <input type="hidden" name="amount" id="amount" value="<?php echo $cost100Credits?>">
-                            <input type="hidden" name="return" id="return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>">
+                            <input type="hidden" name="return" id="return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>?credits_recharge=ok">
+                            <input type="hidden" name="cancel_return" id="cancel_return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>?credits_recharge=ko">
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
                                     <input type="submit"  class="btn btn-primary" alt="Make payments with PayPal - it's fast, free and secure!" value="100 Crediti"> (<?php echo $cost100Credits?> Euro)
                                 </div>
                             </div>
                         </form>
-                        <form class="form-horizontal" id="buy500Credits" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                        <form class="form-horizontal" id="buy500Credits" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
                             <input type="hidden" name="cmd" value="_xclick">
                             <input type="hidden" name="business" value="segreteria_verbanensia_test@gmail.com">
                             <input type="hidden" name="item_name" id="item_name" value="Ricarica 500 Crediti - Utente admin">
@@ -101,14 +105,15 @@
                             <input type="hidden" name="shipping" id="shipping" value="0">
                             <input type="hidden" name="currency_code" value="EUR">
                             <input type="hidden" name="amount" id="amount" value="<?php echo $cost500Credits?>">
-                            <input type="hidden" name="return" id="return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>">
+                            <input type="hidden" name="return" id="return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>?credits_recharge=ok">
+                            <input type="hidden" name="cancel_return" id="cancel_return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>?credits_recharge=ko">
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
                                     <input type="submit"  class="btn btn-primary" alt="Make payments with PayPal - it's fast, free and secure!" value="500 Crediti"> (<?php echo $cost500Credits?> Euro)
                                 </div>
                             </div>
                         </form>
-                        <form class="form-horizontal" id="buy1000Credits" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                        <form class="form-horizontal" id="buy1000Credits" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
                             <input type="hidden" name="cmd" value="_xclick">
                             <input type="hidden" name="business" value="segreteria_verbanensia_test@gmail.com">
                             <input type="hidden" name="item_name" id="item_name" value="Ricarica 1000 Crediti - Utente admin">
@@ -116,7 +121,8 @@
                             <input type="hidden" name="shipping" id="shipping" value="0">
                             <input type="hidden" name="currency_code" value="EUR">
                             <input type="hidden" name="amount" id="amount" value="<?php echo $cost1000Credits?>">
-                            <input type="hidden" name="return" id="return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>">
+                            <input type="hidden" name="return" id="return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>?credits_recharge=ok">
+                            <input type="hidden" name="cancel_return" id="cancel_return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>?credits_recharge=ko">
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
                                     <input type="submit"  class="btn btn-primary" alt="Make payments with PayPal - it's fast, free and secure!" value="1000 Crediti"> (<?php echo $cost1000Credits?> Euro)
