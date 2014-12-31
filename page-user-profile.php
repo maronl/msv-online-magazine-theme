@@ -90,7 +90,7 @@ global $user_ID, $user_identity, $userdata;
                 <?php if ( $issues->have_posts() ) : while ( $issues->have_posts() ) : $issues->the_post();?>
                     <?php get_template_part( 'list-onlimag-issue-little'); ?>
                 <?php endwhile; else: ?>
-                    <p><?php _e( 'Spiacenti, nessun articolo corrisponde ai criteri selezionati.', 'online-magazine-theme'); ?></p>
+                    <li class="no-purchase">Non hai ancora acquistato nessuna rivista.</li>
                 <?php endif; ?>
             </ul>
             <?php wp_pagenavi( array( 'query' => $issues ) )?>
