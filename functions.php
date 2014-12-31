@@ -149,7 +149,9 @@ function posts_join_filter_for_articles_buyed( $join ) {
 
     $join .=
         "
-        LEFT JOIN " . $wpdb->base_prefix . "credits_coins_purchases ON " . $wpdb->posts . ".ID =  " . $wpdb->base_prefix . "credits_coins_purchases.post_id
+        LEFT JOIN " . $wpdb->base_prefix . "credits_coins_purchases
+        ON " . $wpdb->posts . ".ID =  " . $wpdb->base_prefix . "credits_coins_purchases.post_id
+        AND " . $wpdb->base_prefix . "credits_coins_purchases.user_id = " . get_current_user_id() . "
         ";
     return $join;
 }
