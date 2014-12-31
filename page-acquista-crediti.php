@@ -32,6 +32,7 @@
                         $cost500Credits = get_option('credits-coins-cost-500');
                         $cost1000Credits = get_option('credits-coins-cost-1000');
                         ?>
+
                         <form class="form-horizontal" id="buy10Credits" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                             <input type="hidden" name="cmd" value="_xclick">
                             <input type="hidden" name="business" value="segreteria_verbanensia_test@gmail.com">
@@ -40,6 +41,7 @@
                             <input type="hidden" name="shipping" id="shipping" value="0">
                             <input type="hidden" name="currency_code" value="EUR">
                             <input type="hidden" name="amount" id="amount" value="<?php echo $cost10Credits?>">
+                            <input type="hidden" name="return" id="return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>">
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
                                     <input type="submit"  class="btn btn-primary" alt="Make payments with PayPal - it's fast, free and secure!" value="10 Crediti"> (<?php echo $cost10Credits?> Euro)
@@ -54,6 +56,7 @@
                             <input type="hidden" name="shipping" id="shipping" value="0">
                             <input type="hidden" name="currency_code" value="EUR">
                             <input type="hidden" name="amount" id="amount" value="<?php echo $cost20Credits?>">
+                            <input type="hidden" name="return" id="return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>">
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
                                     <input type="submit"  class="btn btn-primary" alt="Make payments with PayPal - it's fast, free and secure!" value="20 Crediti"> (<?php echo $cost20Credits?> Euro)
@@ -68,6 +71,7 @@
                             <input type="hidden" name="shipping" id="shipping" value="0">
                             <input type="hidden" name="currency_code" value="EUR">
                             <input type="hidden" name="amount" id="amount" value="<?php echo $cost50Credits?>">
+                            <input type="hidden" name="return" id="return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>">
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
                                     <input type="submit"  class="btn btn-primary" alt="Make payments with PayPal - it's fast, free and secure!" value="50 Crediti"> (<?php echo $cost50Credits?> Euro)
@@ -82,6 +86,7 @@
                             <input type="hidden" name="shipping" id="shipping" value="0">
                             <input type="hidden" name="currency_code" value="EUR">
                             <input type="hidden" name="amount" id="amount" value="<?php echo $cost100Credits?>">
+                            <input type="hidden" name="return" id="return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>">
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
                                     <input type="submit"  class="btn btn-primary" alt="Make payments with PayPal - it's fast, free and secure!" value="100 Crediti"> (<?php echo $cost100Credits?> Euro)
@@ -96,6 +101,7 @@
                             <input type="hidden" name="shipping" id="shipping" value="0">
                             <input type="hidden" name="currency_code" value="EUR">
                             <input type="hidden" name="amount" id="amount" value="<?php echo $cost500Credits?>">
+                            <input type="hidden" name="return" id="return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>">
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
                                     <input type="submit"  class="btn btn-primary" alt="Make payments with PayPal - it's fast, free and secure!" value="500 Crediti"> (<?php echo $cost500Credits?> Euro)
@@ -110,6 +116,7 @@
                             <input type="hidden" name="shipping" id="shipping" value="0">
                             <input type="hidden" name="currency_code" value="EUR">
                             <input type="hidden" name="amount" id="amount" value="<?php echo $cost1000Credits?>">
+                            <input type="hidden" name="return" id="return" value="<?php echo get_permalink(USER_PROFILE_PAGE)?>">
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
                                     <input type="submit"  class="btn btn-primary" alt="Make payments with PayPal - it's fast, free and secure!" value="1000 Crediti"> (<?php echo $cost1000Credits?> Euro)
